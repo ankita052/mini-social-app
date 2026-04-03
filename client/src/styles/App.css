@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f6f9;
+}
+
+/* Top bar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  background: white;
+  align-items: center;
+}
+
+.top-icons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.badge {
+  background: #ffeaa7;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.wallet {
+  background: #dff9fb;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.profile {
+  width: 30px;
+  height: 30px;
+  background: orange;
+  border-radius: 50%;
+}
+
+/* Banner */
+.banner {
+  background: orange;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 10px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Big Card */
+.big-card {
+  background: white;
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.big-card button {
+  background: #1877f2;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+}
+
+/* Gradient Card */
+.gradient-card {
+  margin: 10px;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  background: linear-gradient(45deg, purple, pink);
+}
+
+/* Feed */
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1877f2;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  color: white;
+  font-size: 20px;
+}
+.auth-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f5;
+}
+
+.auth-box {
+  width: 320px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.auth-box h2 {
+  margin-bottom: 15px;
+}
+
+.auth-box input {
+  width: 100%;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.auth-box button {
+  width: 100%;
+  padding: 10px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.switch-text {
+  margin-top: 10px;
+  color: #1877f2;
+  cursor: pointer;
+  font-size: 14px;
+}
+.post-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+}

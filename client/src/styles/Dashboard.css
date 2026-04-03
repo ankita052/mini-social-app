@@ -1,0 +1,107 @@
+.dashboard {
+  background: #f5f6fa;
+  min-height: 100vh;
+  padding-bottom: 60px;
+}
+
+/* Topbar */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  background: white;
+  align-items: center;
+}
+
+.top-icons span {
+  margin-left: 10px;
+}
+
+.badge {
+  background: #ffeaa7;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+.wallet {
+  background: #dff9fb;
+  padding: 5px 10px;
+  border-radius: 20px;
+}
+
+/* Announcement */
+.announcement {
+  background: orange;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Live strip */
+.live-strip {
+  background: #40739e;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
+}
+
+.card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  width: 30%;
+  text-align: center;
+}
+
+/* Feature */
+.feature-box {
+  background: white;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.feature-box button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+}
+
+/* Reward */
+.reward-box {
+  margin: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  background: linear-gradient(45deg, purple, pink);
+  color: white;
+}
+
+/* Feed */
+.feed-section {
+  margin: 10px;
+}
+
+/* Bottom Nav */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #1877f2;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  color: white;
+}
