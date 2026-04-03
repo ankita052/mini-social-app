@@ -31,7 +31,7 @@ function CreatePost() {
     }
 
     try {
-      await axios.post("http://localhost:5000/posts", {
+      await axios.post("https://your-backend.onrender.com/login", {
         text,
         image
       });

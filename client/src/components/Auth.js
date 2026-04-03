@@ -24,7 +24,7 @@ function Auth({ setIsLoggedIn }) {
     try {
       if (isLogin) {
         // 🔐 LOGIN
-        const res = await axios.post("http://localhost:5000/login", {
+        const res = await axios.post("https://your-backend.onrender.com/login", {
           email: form.email,
           password: form.password
         });
@@ -36,7 +36,7 @@ function Auth({ setIsLoggedIn }) {
         setIsLoggedIn(true); // ✅ REDIRECT
       } else {
         // 📝 SIGNUP
-        const res = await axios.post("http://localhost:5000/register", form);
+        const res = await axios.post("https://your-backend.onrender.com/login", form);
 
         alert(res.data);
 
