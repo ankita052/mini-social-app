@@ -66,33 +66,17 @@ app.post("/register", async (req, res) => {
 // Login
 app.post("/login", async (req, res) => {
   try {
-    const { email, password } = req.body;
-
-    const user = await User.findOne({ email });
-    if (!user) return res.status(404).json("User not found");
-
-    const valid = await bcrypt.compare(password, user.password);
-    if (!valid) return res.status(400).json("Wrong password");
-
-    const token = jwt.sign({ id: user._id }, "secret123");
-
-    res.json({
-      token,
-      user: {
-        id: user._id,
-        name: user.name,
-        email: user.email
-      }
-    });
+    res.json({ token: "test-token" });
+  } catch (err) {
+    res.status(500).json("Server error");
+  }
+});
     app.get("/", (req, res) => {
   res.send("API Running");
 });
 
 
-  } catch (err) {
-    res.status(500).json("Server error");
-  }
-});
+  
 
 /* =========================
    POST ROUTES
