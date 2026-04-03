@@ -11,7 +11,8 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect("mongodb://127.0.0.1:27017/socialApp")
+mongoose.connect(process.env.MONGO_URI)
+
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
@@ -83,6 +84,10 @@ app.post("/login", async (req, res) => {
         email: user.email
       }
     });
+    app.get("/", (req, res) => {
+  res.send("API Running");
+});
+
 
   } catch (err) {
     res.status(500).json("Server error");
